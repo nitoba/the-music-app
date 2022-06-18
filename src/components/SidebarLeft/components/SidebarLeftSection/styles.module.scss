@@ -1,0 +1,17 @@
+@import "../../../../styles/mixins/typography-mixin.scss";
+.container {
+  .header {
+    margin-bottom: 2.4rem;
+
+    h2 {
+      @include bodyBoldSmall;
+      color: var(--gray500);
+    }
+  }
+
+  .sectionMainContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+}

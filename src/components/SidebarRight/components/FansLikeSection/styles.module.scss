@@ -1,0 +1,88 @@
+@import "../../../../styles/mixins/typography-mixin.scss";
+
+.container {
+  .header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h2 {
+      @include headingExtraSmall;
+      color: var(--white);
+    }
+
+    .buttonSeeAll {
+      transition: all 0.5s;
+      @include bodySemiBold;
+      color: var(--green500);
+
+      &:hover {
+        filter: brightness(0.8);
+      }
+    }
+  }
+
+  .mainContent {
+    margin-top: 1.6rem;
+
+    .artistCover {
+      width: 100%;
+      height: 23.4rem;
+      border-radius: 1.2rem;
+      position: relative;
+      img {
+        border-radius: 1.2rem;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .footer {
+        width: 100%;
+        padding: 1.6rem;
+        position: absolute;
+        z-index: 2;
+        border-radius: 0 0 1.2rem 1.2rem;
+
+        bottom: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        background-color: var(--gray850);
+        backdrop-filter: blur(74px);
+        strong {
+          @include bodySemiBoldSmall;
+          color: var(--white);
+        }
+
+        span {
+          @include bodyRegularSmall;
+          color: var(--gray500);
+        }
+      }
+    }
+
+    .dots {
+      margin-top: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+      width: 100%;
+
+      .dot {
+        transition: all 0.5s;
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 9999px;
+        background: rgba(255, 255, 255, 0.4);
+
+        &.active {
+          background: var(--white);
+        }
+      }
+    }
+  }
+}

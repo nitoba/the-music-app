@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gray800);
+  width: 29.8rem;
+  height: 100vh;
+
+  .profileContainer {
+    padding: 3.2rem 3.2rem 0;
+  }
+
+  .sidebarContent {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding-bottom: 15rem;
+    padding: 0 3.2rem;
+    padding-bottom: 15rem;
+
+    .recentlyPlayedSection {
+      margin-top: 3.2rem;
+    }
+  }
+}

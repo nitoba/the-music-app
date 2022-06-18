@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100vh;
+
+  .header {
+    padding: 3.2rem;
+  }
+
+  .content {
+    overflow: scroll;
+    padding: 0 3.2rem;
+    padding-bottom: 15rem;
+
+    .bannerContainer {
+      margin-top: 4rem;
+    }
+
+    .playlistContainer {
+      margin-top: 3.2rem;
+    }
+  }
+}

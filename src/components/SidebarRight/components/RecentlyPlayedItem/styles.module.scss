@@ -1,0 +1,42 @@
+@import "../../../../styles/mixins/typography-mixin.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  .infoContainer {
+    display: flex;
+    align-items: center;
+
+    > img {
+      width: 4.4rem;
+      height: 4.4rem;
+      object-fit: cover;
+      border-radius: 1.2rem;
+    }
+
+    .infoContent {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      margin-left: 1.2rem;
+
+      h3 {
+        @include bodyBoldMedium;
+        color: var(--white);
+      }
+
+      p {
+        @include bodyRegularSmall;
+        color: var(--gray500);
+      }
+    }
+  }
+
+  time {
+    @include bodyRegularSmall;
+    color: var(--white);
+  }
+}

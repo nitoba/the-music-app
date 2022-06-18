@@ -1,0 +1,82 @@
+@mixin heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 6.8rem;
+}
+
+@mixin headingSmall {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.7rem;
+}
+
+@mixin headingExtraSmall {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+@mixin bodyBold {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+@mixin bodyBoldMedium {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+}
+
+@mixin bodyBoldSmall {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.16em;
+}
+
+@mixin bodySemiBold {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+@mixin bodySemiBoldSmall {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+}
+
+@mixin bodyMedium {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+@mixin bodyRegular {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
+@mixin bodyRegularMedium {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+}
+
+@mixin bodyRegularSmall {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}

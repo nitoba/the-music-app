@@ -1,0 +1,52 @@
+@import "../../../../styles/mixins/typography-mixin.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  .avatar {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2.5rem;
+  }
+
+  .usernameContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    .username {
+      @include bodySemiBold;
+      color: var(--white);
+    }
+
+    .typeUserContainer {
+      display: flex;
+      align-items: center;
+      span {
+        @include bodyRegularSmall;
+        color: var(--gray500);
+
+        &::after {
+          content: "";
+          display: inline-block;
+          align-items: center;
+          margin: 0 0.5rem;
+          width: 0.5rem;
+          height: 0.5rem;
+          border-radius: 999rem;
+          background-color: var(--gray500);
+        }
+      }
+    }
+  }
+
+  .arrow {
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+}

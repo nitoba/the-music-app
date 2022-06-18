@@ -1,0 +1,24 @@
+:root {
+  --white: #fff;
+
+  --gray500: rgba(255, 255, 255, 0.72);
+  --gray600: #797979;
+  --gray700: #4d4d4d;
+  --gray800: #212121;
+  --gray850: rgba(18, 18, 18, 0.6);
+  --gray900: #121212;
+
+  --gray-gradient100: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.12) 35.43%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  --gray-gradient200: linear-gradient(
+    270deg,
+    rgba(255, 255, 255, 0.06) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+
+  --green500: #1db954;
+}

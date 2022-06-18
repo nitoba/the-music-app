@@ -1,0 +1,73 @@
+@import "../../../../styles/mixins/typography-mixin.scss";
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .buttonAction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray800);
+    border-radius: 1.2rem;
+    width: 5rem;
+    height: 5rem;
+    transition: all 0.3s;
+
+    &:hover {
+      filter: brightness(0.8);
+    }
+  }
+
+  .containerLeft {
+    display: flex;
+    align-items: center;
+
+    .currentResourceContainer {
+      margin-left: 2.4rem;
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      & :nth-child(1) {
+        @include bodySemiBoldSmall;
+        color: var(--gray500);
+      }
+
+      & :nth-child(3) {
+        @include bodySemiBoldSmall;
+        color: var(--white);
+      }
+    }
+  }
+
+  .containerRight {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+
+    .searchInput {
+      display: flex;
+      align-items: center;
+      border-radius: 1.2rem;
+      background-color: var(--gray800);
+      transition: all 0.3s;
+      padding: 1.6rem;
+      gap: 1.2rem;
+      img {
+        width: 2rem;
+        height: 2rem;
+      }
+      input {
+        outline: none;
+        background: transparent;
+        border: none;
+        @include bodyRegular;
+        color: var(--white);
+        &::placeholder {
+          color: var(--gray600);
+        }
+      }
+    }
+  }
+}

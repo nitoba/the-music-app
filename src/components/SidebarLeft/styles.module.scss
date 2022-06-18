@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--gray800);
+  width: 27rem;
+  height: 100vh;
+  padding-top: 3.5rem;
+
+  header {
+    padding-left: 3.2rem;
+
+    margin-top: 4rem;
+  }
+
+  .sidebarContent {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    padding-bottom: 15rem;
+  }
+}

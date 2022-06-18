@@ -1,0 +1,68 @@
+@import "./mixins/responsive-mixin.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  &::-webkit-scrollbar {
+    display: initial;
+    width: 0.4rem;
+    height: 0.4rem;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: var(--gray850);
+    border-radius: 3.2rem;
+    margin-right: 4rem;
+    margin-left: 4rem;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--gray700);
+    border-radius: 3.2rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: calc(100vw / 1440 * 10);
+  @include useBreakpoint {
+    font-size: calc(100vw / 500 * 10);
+  }
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  color: var(--gray300);
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--gray900);
+  color: var(--white);
+}
+
+button {
+  border: 0;
+  background: none;
+  outline: none;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
